@@ -54,12 +54,12 @@ public class CommissionEmployee extends Employee{
     public void displayCommEmpInfo() {
         super.displayBasicInfo();
         System.out.println("Total Sales: " + getTotalSales());
-        System.out.println("Salary: Php " + computeSalary());
+        System.out.println("Salary: PHP " + computeSalary());
     }
 
     @Override
     public String toString() {
         return "\nTotal Sales: " + totalSales +
-                "\nSalary: Php " + computeSalary();
+                "\nSalary: PHP " + computeSalary();
     }
 }

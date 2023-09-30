@@ -32,11 +32,11 @@ public class BasePlusCommissionEmployee extends CommissionEmployee{
 
     public void displayBCEInfo() {
         super.displayCommEmpInfo();
-        System.out.println("Base Salary: Php" + getBaseSalary());
+        System.out.println("Base Salary: PHP" + getBaseSalary());
     }
 
     @Override
     public String toString() {
-        return "Base Salary: Php" + getBaseSalary() + super.toString();
+        return "Base Salary: PHP" + getBaseSalary() + super.toString();
     }
 }

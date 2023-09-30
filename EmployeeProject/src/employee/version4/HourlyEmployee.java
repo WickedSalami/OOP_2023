@@ -61,13 +61,13 @@ public class HourlyEmployee extends Employee{
         super.displayBasicInfo();
         System.out.println("Total Hours Worked: " + getTotalHoursWorked());
         System.out.println("Rate Per Hour: " + getRatePerHour());
-        System.out.println("Salary: Php " + computeSalary());
+        System.out.println("Salary: PHP " + computeSalary());
     }
 
     @Override
     public String toString() {
         return "\nTotal Hours Worked: " + totalHoursWorked +
                 "\nRate Per Hour: " + ratePerHour +
-                "\nSalary: Php " + computeSalary();
+                "\nSalary: PHP " + computeSalary();
     }
 }

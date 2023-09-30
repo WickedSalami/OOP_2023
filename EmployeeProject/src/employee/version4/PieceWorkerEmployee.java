@@ -60,13 +60,13 @@ public class PieceWorkerEmployee extends Employee{
         super.displayBasicInfo();
         System.out.println("Total pieces finished: " + getTotalPiecesFinished());
         System.out.println("Rate per piece: " + getRatePerPiece());
-        System.out.println("Salary: Php " + computeSalary());
+        System.out.println("Salary: PHP " + computeSalary());
     }
 
     @Override
     public String toString() {
         return "\nTotal pieces finished: " + totalPiecesFinished +
                 "\nRate per piece: " + ratePerPiece +
-                "\nSalary: Php " + computeSalary();
+                "\nSalary: PHP " + computeSalary();
     }
 }

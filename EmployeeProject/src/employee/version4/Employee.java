@@ -2,7 +2,7 @@ package employee.version4;
 
 import java.util.Date;
 
-public class Employee {
+public abstract class Employee {
     private int empID;
     private Name empName;
     private DateFormat empDateHired; // date - month - year format
@@ -69,4 +69,6 @@ public class Employee {
                 "\nDate Hired: " + getEmpDateHired() +
                 "\nDate of Birth: " + getEmpBirthDate();
     }
+
+    public abstract double computeSalary();
 }
