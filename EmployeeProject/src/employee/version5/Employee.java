@@ -2,7 +2,7 @@ package employee.version5;
 
 import java.util.Date;
 
-public abstract class Employee {
+public class Employee {
     private int empID;
     private Name empName;
     private DateFormat empDateHired; // date - month - year format
@@ -62,6 +62,10 @@ public abstract class Employee {
         System.out.println("Birth Date: " + getEmpBirthDate());
     }
 
+    public double computeSalary() {
+        throw new UnsupportedOperationException("computeSalary() method must be overridden in subclasses");
+    }
+
     @Override
     public String toString() {
         return "Name: " + getEmpName() +
@@ -69,6 +73,4 @@ public abstract class Employee {
                 "\nDate Hired: " + getEmpDateHired() +
                 "\nDate of Birth: " + getEmpBirthDate();
     }
-
-    public abstract double computeSalary();
 }
