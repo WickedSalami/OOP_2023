@@ -1,7 +1,7 @@
 package employee.version4;
 
 public class EmployeeRoster {
-    private Employee[] empList;
+    private Employee empList[];
     private int max;
     private int count;
 
@@ -144,17 +144,22 @@ public class EmployeeRoster {
         for (Employee emp : empList) {
             if (emp != null) {
                 String type = "";
+                double salary = 0;
                 if (emp instanceof HourlyEmployee) {
                     type = "Hourly";
+                    salary = ((HourlyEmployee) emp).computeSalary();
                 } else if (emp instanceof PieceWorkerEmployee) {
                     type = "Piece Worker";
+                    salary = ((PieceWorkerEmployee) emp).computeSalary();
                 } else if (emp instanceof BasePlusCommissionEmployee) {
                     type = "Base Plus Commission";
+                    salary = ((BasePlusCommissionEmployee)emp).computeSalary();
                 } else if (emp instanceof CommissionEmployee) {
                     type = "Commission";
+                    salary = ((CommissionEmployee) emp).computeSalary();
                 }
 
-                System.out.printf("%-4d|\t%-25s|\t%-25s|\tPhp %-10.2f\n", emp.getEmpID(), emp.getEmpName().displayName(), type, emp.computeSalary());
+                System.out.printf("%-4d|\t%-25s|\t%-25s|\tPhp %-10.2f\n", emp.getEmpID(), emp.getEmpName().displayName(), type, salary);
             }
         }
         System.out.println("-------------------------------------------------------------------------------");
