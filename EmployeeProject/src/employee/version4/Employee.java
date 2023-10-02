@@ -62,10 +62,6 @@ public class Employee {
         System.out.println("Birth Date: " + getEmpBirthDate());
     }
 
-    public double computeSalary() {
-        throw new UnsupportedOperationException("computeSalary() method must be overridden in subclasses");
-    }
-
     @Override
     public String toString() {
         return "Name: " + getEmpName() +
